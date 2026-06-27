@@ -1,26 +1,26 @@
 class Pgferry < Formula
   desc "Migrate MySQL, MariaDB, SQLite, or MSSQL databases to PostgreSQL"
   homepage "https://www.pgferry.com"
-  version "6.0.1"
+  version "6.0.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Limetric/pgferry/releases/download/v6.0.1/pgferry-darwin-arm64"
-      sha256 "a766670010e386534cf18f7786a31eaf2c86d8ca77c8ab209073e9847396faec"
+      url "https://github.com/Limetric/pgferry/releases/download/v6.0.2/pgferry-darwin-arm64"
+      sha256 "73a201d3db3231c44622cba7b99cefe858e54569b351b003a17d3714bdc90d83"
     elsif Hardware::CPU.intel?
-      url "https://github.com/Limetric/pgferry/releases/download/v6.0.1/pgferry-darwin-amd64"
-      sha256 "ed587c60bb7a083c595a47b3e15d3dee97bd39d075a18e262e5e3514e66eb8bb"
+      url "https://github.com/Limetric/pgferry/releases/download/v6.0.2/pgferry-darwin-amd64"
+      sha256 "c1842851a89cb49f95fc3f699b1b4c22b98bb465908dd3cabe826518458c580d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Limetric/pgferry/releases/download/v6.0.1/pgferry-linux-arm64"
-      sha256 "169c530374e51696f72c36d0ce0d888ef3c71b945ad240f418fef6550562efcc"
+      url "https://github.com/Limetric/pgferry/releases/download/v6.0.2/pgferry-linux-arm64"
+      sha256 "562c5d131a3cc5aa8dead43058ee890b9af36fbbaa3be2c6f0c3e0d48b012679"
     elsif Hardware::CPU.intel?
-      url "https://github.com/Limetric/pgferry/releases/download/v6.0.1/pgferry-linux-amd64"
-      sha256 "bee2f6d29e389c8faac8f964c2ee5c5765f047961aad2b8554793c0713c1a3f1"
+      url "https://github.com/Limetric/pgferry/releases/download/v6.0.2/pgferry-linux-amd64"
+      sha256 "72066ae4cfdca02a40e9496577c9b46e889e659058b4bbb33d91a2748d08c8c6"
     end
   end
 
