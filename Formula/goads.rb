@@ -1,26 +1,26 @@
 class Goads < Formula
   desc "Google Ads campaign management CLI and MCP server"
   homepage "https://github.com/Limetric/goads"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Limetric/goads/releases/download/v0.2.0/goads-darwin-arm64"
-      sha256 "80a3eeef5d9d305bfca6983616dc47d3174e7f48b3a5e8c36338d3c53e50b1e5"
+      url "https://github.com/Limetric/goads/releases/download/v0.2.1/goads-darwin-arm64"
+      sha256 "6a8725494a6bdb54dc0cac783f6add78157e9ba53f6e3ea10f7e44c019fca36b"
     elsif Hardware::CPU.intel?
-      url "https://github.com/Limetric/goads/releases/download/v0.2.0/goads-darwin-amd64"
-      sha256 "1b30d84deb134730db726ba765bb647bfdf834ad18bad8f7477c7d363431ff2d"
+      url "https://github.com/Limetric/goads/releases/download/v0.2.1/goads-darwin-amd64"
+      sha256 "bb034b0a9b5af2f64bfecf846c4cea90c98985ba46067736f8ff1c926d3356c1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Limetric/goads/releases/download/v0.2.0/goads-linux-arm64"
-      sha256 "2fc38a5d3e2abd4c56a7b43f068937d76b96322504c8193e45408a90f156d32a"
+      url "https://github.com/Limetric/goads/releases/download/v0.2.1/goads-linux-arm64"
+      sha256 "298351e69b9494f09a17552e4d475207f7652a764f4f8675b09d97770ba22fbd"
     elsif Hardware::CPU.intel?
-      url "https://github.com/Limetric/goads/releases/download/v0.2.0/goads-linux-amd64"
-      sha256 "6838ec25106efa9903ebc9c6592d9c30180908ebca0fa7404882711fddea6af9"
+      url "https://github.com/Limetric/goads/releases/download/v0.2.1/goads-linux-amd64"
+      sha256 "78b86befb6431e30169f9e49324441ee7eb7979b0a121faf1b2f3a47a6120dce"
     end
   end
 
