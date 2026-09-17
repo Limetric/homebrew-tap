@@ -1,26 +1,26 @@
 class Ads < Formula
   desc "Ad platform management CLI and MCP server"
   homepage "https://github.com/Limetric/goads"
-  version "1.2.1"
+  version "1.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Limetric/goads/releases/download/v1.2.1/ads-darwin-arm64"
-      sha256 "4e43c12f9accda80ebddc173fcf9de836b0ebf880081cebf3cd312c63d5df725"
+      url "https://github.com/Limetric/goads/releases/download/v1.3.0/ads-darwin-arm64"
+      sha256 "2e0f5dfcd868c83b501afc9b3ad113d38559827755f749d5b0bb61dc064cf6e9"
     elsif Hardware::CPU.intel?
-      url "https://github.com/Limetric/goads/releases/download/v1.2.1/ads-darwin-amd64"
-      sha256 "644d2e0ad88f6936c2d509acc6dd01def8efedae288e1c94ed349e561f37b83f"
+      url "https://github.com/Limetric/goads/releases/download/v1.3.0/ads-darwin-amd64"
+      sha256 "1fd724b7975b60825c68a81c3e615a201ab82cf51ceffd62d9c1d199410511ab"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Limetric/goads/releases/download/v1.2.1/ads-linux-arm64"
-      sha256 "4d22aa3438cc0a7b0ad93bfb888ddd0d697effad4926401167fbf65cf9118fb6"
+      url "https://github.com/Limetric/goads/releases/download/v1.3.0/ads-linux-arm64"
+      sha256 "2224b56ae347a87cd82c0ebb3b9d708c1e3ec291a713b07a75f422ac382106ee"
     elsif Hardware::CPU.intel?
-      url "https://github.com/Limetric/goads/releases/download/v1.2.1/ads-linux-amd64"
-      sha256 "6712c32331f1b02f8ff517c841e225e37feb4d1df5c9b68651e078ec10058f7b"
+      url "https://github.com/Limetric/goads/releases/download/v1.3.0/ads-linux-amd64"
+      sha256 "783fa4133954f0c41caa47f5a21b873a4441006abeb7373347b358e699885215"
     end
   end
 
